@@ -1,0 +1,147 @@
+Advantages of Spring Boot:
+It reduces lots of development time and increases productivity.
+It avoids writing lots of boilerplate Code, Annotations and XML Configuration.It is very easy to develop Spring Based applications with Java or Groovy.
+
+
+Learning path for Spring Boot
+
+Java Fundamentals 1 & 2 -Sonmez
+
+Maven Fundamentals - Hansen
+
+Spring Fundamentals - Hansen
+
+Introduction to Spring MVC 4- Hansen
+
+Spring Security Fundamentals - Hansen
+
+Spring with JPA and Hibernate - Hansen
+
+Getting Started with Spring Data JPA - Bunker
+
+Getting Started with Spring Data REST - Bunker
+
+
+
+Spring Boot Dependency Management
+
+-<parent>
+ <groupId>org.springframework.boot</groupId>
+ <artifactId>spring-boot-starter-parent</artifactId>
+ <version>1.3.0.RELEASE</version>
+</parent>
+
+
+How does Spring Boot work?
+
+-main() entry point
+
+-Spring Application : Spring context 
+                      Spring environment
+                      Initializers
+-Embedded Server : Default is Tomcat
+                   Auto configured
+
+
+public static void main - starts Java and then the application
+
+@SpringBootApplication - A convenience annotation that wraps commonly used annotations with Spring Boot
+
+@Configuration - Spring configuration on startup
+@EnableAutoConfiguration - Auto configures frameworks
+@ComponentScan - Scans project for Spring components
+
+
+SpringApplication.run( ... ); Starts Spring, creates spring context, applies annotations and sets up container
+
+Why move to containerless Deployments ?
+Container Deployments(App inside container)
+Pre-setup and configuration
+Need to use files like web.xml to tell container how to work
+Environment configuration is external to your application.
+
+Application Deployments
+Runs anywhere Java is setup(think cloud deployment)
+Container is embedded and the app directs how the container works
+Environment configuration is internal to your application.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
